@@ -1,6 +1,101 @@
+print('hello')
+print("hello")
+print("I don't know")
+# print('I don't know'')
+# /opt/anaconda3/bin/python /Users/hitoshi/PycharmProjects/python_programming/lesson.py
+#   File "/Users/hitoshi/PycharmProjects/python_programming/lesson.py", line 4
+#     print('I don't know'')
+#                  ^
+# SyntaxError: invalid syntax
+#
+# Process finished with exit code 1
+print('I don\'t know')
+print("say \"I don't know\"")
+
+print('hello. \nHow are you?')
+
+print('C:\name\name')
+# C:
+# ame
+# ame
+print(r'C:\name\name')
+# C:\name\name
+
+
+print("""
+line1
+line2
+line3
+""")
+#
+# line1
+# line2
+# line3
+#
+
+print("""######""")
+print("""
+line1
+line2
+line3
+""")
+print("""##########""")
+# ######
+#
+# line1
+# line2
+# line3
+#
+# ##########
+
+print("""######""")
+print("""\
+line1
+line2
+line3\
+""")
+print("""##########""")
+
+# ######
+# line1
+# line2
+# line3
+# ##########
+
+print("Hi." * 3)
+# Hi.Hi.Hi.
+
+print('Hi.' * 3 + 'Mike.')
+# Hi.Hi.Hi.Mike.
+
+print('Py' + 'thon')
+# Python
+
+print('Py''thon')
+
+print('Py''thon')
+prefix = 'Py'
+# print(prefix'thon')
+# #     print(prefix'thon')
+# #                 ^
+# # SyntaxError: invalid syntax
+print(prefix + 'thon')
+# Python
+
+s = ('aaaaaaaaaaaaaaaaPy'
+     'bbbbbbbbbbbbbbbbbb')
+print(s)
+# aaaaaaaaaaaaaaaaPybbbbbbbbbbbbbbbbbb
+
+s = 'aaaaaaaaaaaaaaaaPy' \
+    'bbbbbbbbbbbbbbbbbb'
+print(s)
+# aaaaaaaaaaaaaaaaPybbbbbbbbbbbbbbbbbb
+
 
 
 ###
+
 
 # print(2+2)
 
