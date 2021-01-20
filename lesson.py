@@ -486,3 +486,44 @@ print(f'My name is {name} {family}. Watashi ha {family} {name}.')
 # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # >>> exit()
 # (base)
+
+
+###
+
+
+r = [1, 2, 3, 4, 5, 1, 2, 3]
+print(r.index(3))
+# 2
+print(r.index(3, 3))
+# 7
+print(r.count(3))
+# 2
+if 5 in r:
+    print('exist')
+# exist
+if 100 in r:
+    print('exist')
+#
+
+r.sort()
+print(r)
+# [1, 1, 2, 2, 3, 3, 4, 5]
+
+r.sort(reverse=True)
+print(r)
+# [5, 4, 3, 3, 2, 2, 1, 1]
+
+r.reverse()
+print(r)
+# [1, 1, 2, 2, 3, 3, 4, 5]
+
+s = 'My name is Mike.'
+to_split = s.split(' ')
+print(to_split)
+# ['My', 'name', 'is', 'Mike.']
+
+x = ' '.join(to_split)  # 空白文字を使ってリストを作って
+print(x)
+# My name is Mike.
+
+print(help(list))
