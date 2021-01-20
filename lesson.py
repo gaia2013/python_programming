@@ -194,6 +194,23 @@ print(s.replace('Mike', 'Nancy'))
 
 ###
 
+# format -> f-strings
+a = 'a'
+print(f'a is {a}')
+# a is a
+
+x, y, z = 1, 2, 3
+print(f'a is {x}, {y}, {z}')
+print(f'a is {z}, {y}, {x}')
+# a is 1, 2, 3
+# a is 3, 2, 1
+
+name = 'Jun'
+family = 'Sakai'
+print(f'My name is {name} {family}. Watashi ha {family} {name}.')
+# My name is Jun Sakai. Watashi ha Sakai Jun.
+
+###
 
 # print(2+2)
 
