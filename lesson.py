@@ -584,3 +584,45 @@ print(X)
 # ['p', 'b']
 # 両方書き換えられる
 
+
+
+###
+
+
+# $
+#  python
+# Python 3.8.5 (default, Sep  4 2020, 02:22:02)
+# [Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+# Type "help", "copyright", "credits" or "license" for more information.
+# >>> seat = []
+# >>> min = 0
+# >>> max = 5
+# >>> min <= len(seat) < max
+# True
+# >>> seat.append('p')
+# >>> min <= len(seat) < max
+# True
+# >>> len(seat)
+# 1
+# >>> seat.append('p')
+# >>> min <= len(seat) < max
+# True
+# >>> seat.append('p')
+# >>> seat.append('p')
+# >>> len(seat)
+# 4
+# >>> min <= len(seat) < max
+# True
+# >>> seat.append('p')
+# >>> min <= len(seat) < max
+# False
+# >>> len(seat)
+# 5
+# >>> seat.pop(0)
+# 'p'
+# >>> min <= len(seat) < max
+# True
+# >>> exit()
+# (base)
+
+
