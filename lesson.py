@@ -123,10 +123,35 @@ n = len(word)
 print(n)
 # 6
 
+###
 
+s = 'My name is Mike. Hi Mike.'
+print(s)
+is_start = s.startswith('My')
+print(is_start)
+# True
+is_start = s.startswith('X')
+print(is_start)
+# False
+print("#######")
 
+print(s.find('Mike'))
+# 11 前から１１番目
+print(s.rfind('Mike'))
+# 20 前から２０番目　後ろから
+print(s.count('Mike'))
+# 2
+print(s.capitalize())
+# My name is mike. hi mike.
+print(s.title())
+# My Name Is Mike. Hi Mike.
 
+print(s.upper())
+# MY NAME IS MIKE. HI MIKE.
+print(s.lower())
+# my name is mike. hi mike.
 
+print(s.replace('Mike', 'Nancy'))
 
 ###
 
