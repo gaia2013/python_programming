@@ -626,3 +626,105 @@ print(X)
 # (base)
 
 
+###
+
+# tuple　はデータを変更できないようにしたいとき　
+# 追加・変更　できない
+
+# $
+#  python
+# Python 3.8.5 (default, Sep  4 2020, 02:22:02)
+# [Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+# Type "help", "copyright", "credits" or "license" for more information.
+# >>> t = (1, 2, 3, 4, 1, 2)
+# >>> t
+# (1, 2, 3, 4, 1, 2)
+# >>> t[0] = 100
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: 'tuple' object does not support item assignment
+# >>> t[0]
+# 1
+# >>> t
+# (1, 2, 3, 4, 1, 2)
+# >>> t.index(1)
+# 0
+# >>> t.count(1)
+# 2
+# >>> t.help
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# AttributeError: 'tuple' object has no attribute 'help'
+# >>> help(list)
+#
+# >>> help(tapple)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'tapple' is not defined
+# >>> help(taple)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'taple' is not defined
+# >>> help(tuple)
+#
+# >>> t = ([1,2,3], [4,5,6])
+# >>> t
+# ([1, 2, 3], [4, 5, 6])
+# >>> t[0] = [1]
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: 'tuple' object does not support item assignment
+# >>> t[0][0]
+# 1
+# >>> t[0][0] = 100
+# >>> t
+# ([100, 2, 3], [4, 5, 6])
+# >>> t = 1, 2, 3
+# >>> type(t)
+# <class 'tuple'>
+# >>> t = 1,
+# >>> t
+# (1,)
+# >>> type(t)
+# <class 'tuple'>
+# >>> t = 1
+# >>> type(t)
+# <class 'int'>
+# >>> t=()
+# >>> type(t)
+# <class 'tuple'>
+# >>> t = (1)
+# >>> t
+# 1
+# >>> type(t)
+# <class 'int'>
+# >>> t = ('test')
+# >>> type(t)
+# <class 'str'>
+# >>> t = ('test',)
+# >>> t
+# ('test',)
+# >>> type(t)
+# <class 'tuple'>
+# >>>
+# >>> t = 1,
+# >>> t +100
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: can only concatenate tuple (not "int") to tuple
+# >>> new_tupple = (1, 2, 3) + (4, 5, 6)
+# >>> new_tupple
+# (1, 2, 3, 4, 5, 6)
+# >>>
+# >>> new_tupple = (1) + (4, 5, 6)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: unsupported operand type(s) for +: 'int' and 'tuple'
+# >>> new_tuple = (1,)+(4,5,6)
+# >>> new_tuple
+# (1, 4, 5, 6)
+# >>> exit()
+# (base)
+
+
+
