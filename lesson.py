@@ -1335,12 +1335,57 @@ print(a is None)
 
 ###
 
-d = {'x': 100, 'y': 200}
+# d = {'x': 100, 'y': 200}
+#
+# for k, v in d.items():
+#     print(k, ':', v)
+# # x : 100
+# # y : 200
+#
+# print(d.items())
+# # dict_items([('x', 100), ('y', 200)])
 
-for k, v in d.items():
-    print(k, ':', v)
-# x : 100
-# y : 200
 
-print(d.items())
-# dict_items([('x', 100), ('y', 200)])
+###
+
+# say_something()
+
+# def say_something():
+#     print('Hi')
+#
+# say_something()
+# ## Hi
+#
+# print(type(say_something))
+# ## <class 'function'>
+
+def say_something():
+    s = 'hi'
+    return s
+
+result = say_something()
+print(result)
+
+
+def what_is_this(color):
+    print(color)
+
+what_is_this('red')
+
+def what_is_this(color):
+    if color == 'red':
+        return 'tomato'
+    elif color == 'green':
+        return 'green pepper'
+    else:
+        return "I don't know"
+
+result = what_is_this('red')
+print(result)
+result = what_is_this('green')
+print(result)
+result = what_is_this('yellow')
+print(result)
+
+
+
