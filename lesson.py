@@ -911,3 +911,22 @@ y = x.copy()
 y['a'] = 1000
 print(x)
 print(y)
+
+
+####
+# List よりも Hash テーブルのほうが早い
+l = [
+    ['apple', 100],
+    ['banana', 100],
+    ['orange', 100],
+]
+print(l[0][1])
+
+fruits = {
+    'apple': 100,
+    'banana': 200,
+    'orange': 300,
+}
+
+print(fruits['apple'])
+
