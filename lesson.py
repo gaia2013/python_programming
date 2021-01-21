@@ -778,3 +778,39 @@ print(chose_from_two)
 print(answer)
 
 
+###
+
+# $
+#  python
+# Python 3.8.5 (default, Sep  4 2020, 02:22:02)
+# [Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+# Type "help", "copyright", "credits" or "license" for more information.
+# >>> d = {'x': 10, 'y': 20}
+# >>> d
+# {'x': 10, 'y': 20}
+# >>> type(d)
+# <class 'dict'>
+# >>> d['x']
+# 10
+# >>> d['y']
+# 20
+# >>> d['x'] = 100
+# >>> d
+# {'x': 100, 'y': 20}
+# >>> d['x'] = 'xxx'
+# >>> d
+# {'x': 'xxx', 'y': 20}
+# >>> d['z'] = 200
+# >>> d
+# {'x': 'xxx', 'y': 20, 'z': 200}
+# >>> d[1] = 10000
+# >>> d
+# {'x': 'xxx', 'y': 20, 'z': 200, 1: 10000}
+# >>> dict(a=10,b=20)
+# {'a': 10, 'b': 20}
+# >>> dict([('1',10),('b', 20)])
+# {'1': 10, 'b': 20}
+# >>> exit()
+# (base)
+
+
