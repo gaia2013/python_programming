@@ -930,3 +930,44 @@ fruits = {
 
 print(fruits['apple'])
 
+
+###
+
+# $
+#  clear
+# (base)
+# 13:15:54 hitoshi:~/PycharmProjects/python_programming (section_3_bssics_of_python *)$
+#  python
+# Python 3.8.5 (default, Sep  4 2020, 02:22:02)
+# [Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+# Type "help", "copyright", "credits" or "license" for more information.
+# >>> a = {1, 2, 2, 3, 4, 4, 4, 5, 6}
+# >>> a
+# {1, 2, 3, 4, 5, 6}
+# >>> type(a)
+# <class 'set'>
+# >>> b = {2,3,3,6,7}
+# >>> b
+# {2, 3, 6, 7}
+# >>> a
+# {1, 2, 3, 4, 5, 6}
+# >>> a-b
+# {1, 4, 5}
+# >>> b-a
+# {7}
+# >>> a & b
+# {2, 3, 6}
+# >>> a + b
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: unsupported operand type(s) for +: 'set' and 'set'
+# >>> a | b
+# {1, 2, 3, 4, 5, 6, 7}
+# >>> a ^ b
+# {1, 4, 5, 7}
+# >>> exit()
+# (base)
+
+
+
+
