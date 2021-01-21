@@ -1219,14 +1219,21 @@ print(a is None)
 # # 4
 
 
-count = 0
+# count = 0
+#
+# while count < 5:
+#     if count == 1:
+#         break
+#     print(count)
+#     count += 1
+# else:
+#     print('done')
+#
+#
 
-while count < 5:
-    if count == 1:
+
+while True:
+    word = input('Enter')
+    if word == 'ok':
         break
-    print(count)
-    count += 1
-else:
-    print('done')
-
-
+    print('next')
