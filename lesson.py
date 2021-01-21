@@ -1117,3 +1117,53 @@ if is_ok:
 
 if not is_ok:
     print('hello')
+
+
+####
+
+is_ok = True
+if is_ok:
+    print('OK')
+#  OK
+
+is_ok = 1
+if is_ok:
+    print('OK')
+# OK
+
+is_ok = 10020
+if is_ok:
+    print('OK!')
+else:
+    print('No!')
+# OK!
+
+is_ok = 0
+if is_ok:
+    print('OK!')
+else:
+    print('No!')
+# No!
+
+is_ok = ''
+if is_ok:
+    print('OK!')
+else:
+    print('No!')
+# No!
+
+is_ok = []
+if is_ok:
+    print('OK!')
+else:
+    print('No!')
+# No!
+
+is_ok = [1, 2, 3, 4]
+if is_ok:
+    print('OK!')
+else:
+    print('No!')
+# OK!
+
+# False, 0, 0, 0, '', [], {}, (), set()
