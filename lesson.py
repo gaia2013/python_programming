@@ -1189,3 +1189,31 @@ print(True is True)
 
 a = None
 print(a is None)
+
+
+###
+
+# count = 0
+#
+# while count < 5:
+#     print(count)
+#     count += 1
+
+# while True:
+#     print('XXX')
+
+count = 0
+while True:
+    if count >= 5:
+        break
+
+    if count == 2:
+        count += 1
+        continue
+
+    print(count)
+    count += 1
+# 0
+# 1
+# 3
+# 4
