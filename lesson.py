@@ -762,3 +762,19 @@ b = 200
 a, b = b, a
 print(a, b)
 
+
+
+###
+# 質問をユーザーに投げかけて選択肢を３つ上げて２つ選択させるアプリ
+
+chose_from_two = ('A', 'B', 'C')
+# tupleではなく、配列を使ってしまうと間違えて操作してしまう可能性あり
+# tuple にappendはできない
+answer = []
+answer.append('A')
+answer.append('C')
+
+print(chose_from_two)
+print(answer)
+
+
