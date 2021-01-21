@@ -1167,3 +1167,25 @@ else:
 # OK!
 
 # False, 0, 0, 0, '', [], {}, (), set()
+
+
+###
+is_empty = None
+print(is_empty)
+# print(help(is_empty))
+
+if is_empty == None:
+    print('None!!!')
+
+if is_empty is None:
+    print('None!!!')
+
+if is_empty is not None:
+    print('YES!!!')
+
+print(1 == True)    # 真どうしか？
+print(1 is True)    # オブジェクト同士　が　同じか？
+print(True is True)
+
+a = None
+print(a is None)
