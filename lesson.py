@@ -1023,3 +1023,23 @@ kind = set(f)
 print(kind)
 
 
+###
+
+print('XXXXXX')
+"""
+test
+test
+test
+test
+"""
+print('XXXXXX')
+
+# Apple price
+some_value = 100
+
+###
+
+
+
+
+
