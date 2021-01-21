@@ -970,4 +970,44 @@ print(fruits['apple'])
 
 
 
+####
+
+# $
+#  clear
+# (base)
+# 13:20:27 hitoshi:~/PycharmProjects/python_programming (section_3_bssics_of_python)$
+#  python
+# Python 3.8.5 (default, Sep  4 2020, 02:22:02)
+# [Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+# Type "help", "copyright", "credits" or "license" for more information.
+# >>> s = {1,2,3,4,5}
+# >>> s
+# {1, 2, 3, 4, 5}
+# >>> s[0]
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: 'set' object is not subscriptable
+# >>> s.add(6)
+# >>> s
+# {1, 2, 3, 4, 5, 6}
+# >>> s.add(6)
+# >>> s
+# {1, 2, 3, 4, 5, 6}
+# >>> s.remove(6)
+# >>> s
+# {1, 2, 3, 4, 5}
+# >>> s.clear()
+# >>> s
+# set()
+# >>> a = {}
+# >>> type(a)
+# <class 'dict'>
+# >>> a
+# {}
+# >>> type(a)
+# <class 'dict'>
+# >>> help(set)
+#
+# >>> exit()
+# (base)
 
