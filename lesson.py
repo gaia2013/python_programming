@@ -1529,3 +1529,16 @@ def example_func(param1, param2):
 print(example_func.__doc__)
 # .__doc__  documentを表示できる
 
+
+###
+
+def outer(a, b):
+
+    def plus(c, d):
+        return c + d
+
+    r1 = plus(a, b)
+    r2 = plus(b, a)
+    print(r1 + r2)
+
+outer(1, 2)
