@@ -1410,3 +1410,40 @@ def menu(entree='beef', drink='wine', dessert='ice'):
 
 menu(entree='chicken', drink='beer')
 
+
+###
+
+def test_func(x, l=[]):
+    l.append(x)
+    return l
+
+# y = [1, 2, 3]
+# r = test_func(100, y)
+# print(r)
+#
+# y = [1, 2, 3]
+# r = test_func(200, y)
+# print(r)
+
+r = test_func(100)
+print(r)
+# [100]
+r = test_func(100)
+print(r)
+# [100, 100]
+
+## リストは　デフォルト引数として渡すべきではない
+## ２度めに実行したときは1度目のリストのアドレスを指したまま
+
+def test_func(x, l=None):
+    if l is None:
+        l = []
+    l.append(x)
+    return l
+
+r = test_func(100)
+print(r)
+# [100]
+r = test_func(100)
+print(r)
+# [100]
