@@ -1447,3 +1447,35 @@ print(r)
 r = test_func(100)
 print(r)
 # [100]
+
+
+###
+
+
+# def say_something(word, word2, word3):
+#     print(word)
+#     print(word2)
+#     print(word3)
+#
+# say_something('Hi!', 'Mike', 'Nance')
+
+def say_something(word, *args):
+    print('word =', word)
+    for arg in args:
+        print(args)
+
+say_something('Hi!', 'Mike', 'Nance')
+# word = Hi!
+# ('Mike', 'Nance')
+# ('Mike', 'Nance')
+
+t = ('Mike', 'Nancy')
+say_something('Hi!', *t)
+# word = Hi!
+# ('Mike', 'Nancy')
+# ('Mike', 'Nancy')
+## tupleをunpackingして渡す™
+
+
+###
+
