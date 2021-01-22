@@ -1513,3 +1513,19 @@ menu('banana', 'apple', 'orange', entree='beef', drink='coffee')
 # ('apple', 'orange')
 # {'entree': 'beef', 'drink': 'coffee'}
 
+def example_func(param1, param2):
+    """Example function with types documented in the docstring.
+
+    :param param1 (int): The first parameter.
+    :param param2 (str): The second parameter.
+
+    :return:
+        bool: The return value. True for success, False otherwise.
+    """
+    print(param1)
+    print(param2)
+    return True
+
+print(example_func.__doc__)
+# .__doc__  documentを表示できる
+
