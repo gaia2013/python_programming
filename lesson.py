@@ -1781,7 +1781,7 @@ d = {x: y for x, y in zip(w, f)}
 print(d)
 
 
-###
+### set inclusion notation
 
 
 s = set()
@@ -1794,3 +1794,28 @@ print(s)
 
 s = {i for i in range(10) if i % 2 == 0}
 print(s)
+
+
+
+###
+
+def g():
+    for i in range(10):
+        yield i
+
+g = g()
+# print(type(g))
+# # <class 'generator'>
+# print(next(g))
+# print(next(g))
+# print(next(g))
+# print(next(g))
+# print(next(g))
+
+g = tuple(i for i in range(10) if i % 2 == 0)
+# print(type(g))
+# # <class 'generator'>
+# print(g)
+
+for x in g:
+    print(x)
