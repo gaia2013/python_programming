@@ -1834,3 +1834,37 @@ def f():
 
 f()
 print('global:', globals())
+
+
+
+### exception handling
+
+l = [1, 2, 3]
+i = 5
+# del l # NameError: name 'l' is not defined
+
+# # try:
+#     l[i]
+# # except:
+# #     print("Don't worry")
+# # IndentationError: unexpected indent
+
+# del l
+try:
+    # () + l
+    # l(0)
+    l[0]
+except IndexError as ex:
+    print("Don't worry: {}".format(ex))
+#   Don't worry: list index out of range
+except NameError as ex:
+    print(ex)
+#   name 'l' is not defined
+except Exception as ex:
+    print('other:{}'.format(ex))
+# other:can only concatenate tuple (not "list") to tuple
+else: #エラーなく抜けたとき
+    print('done')
+finally:
+    print('clean up')
+# print("last")
