@@ -1797,7 +1797,7 @@ print(s)
 
 
 
-###
+### generator inclusion indication
 
 def g():
     for i in range(10):
