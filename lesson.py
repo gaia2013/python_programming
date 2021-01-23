@@ -1819,3 +1819,18 @@ g = tuple(i for i in range(10) if i % 2 == 0)
 
 for x in g:
     print(x)
+
+
+####
+
+animal ="cat"
+
+def f():
+    # print(animal)
+    # animal = 'dog'
+    # print('after', animal)
+    #     UnboundLocalError: local variable 'animal' referenced before assignment
+    print('local', locals())
+
+f()
+print('global:', globals())
