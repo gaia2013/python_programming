@@ -1763,3 +1763,20 @@ print(r)
 
 # ※for loop が２個以上続くときは　マルチラインで書いたほうが読みやすい場合が多い。
 # コードが読みにくいと開発スピードが遅れたり、バグにつながりやすい・
+
+
+### Thesaurus includes epithets
+
+
+w = ['mon', 'tue','wed']
+f = ['coffee', 'milk', 'water']
+
+d = {}
+for x, y in zip(w, f):
+    d[x] = y
+
+print(d)
+
+d = {x: y for x, y in zip(w, f)}
+print(d)
+
