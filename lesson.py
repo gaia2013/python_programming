@@ -1651,3 +1651,28 @@ print(r)
 # f=print_info(add_num)
 # r = f(10, 20)
 # print(r)
+
+
+###
+
+
+l = ['Mon', 'tue', 'Wed', 'Thu', 'fri', 'sat', 'Sun']
+
+def change_words(words, func):
+    for word in words:
+        print(func(word))
+
+# def sample_func(word):
+#     return word.capitalize()
+#
+# def sample_func2(word):
+#     return word.lower()
+#
+# sample_func = lambda word: word.capitalize()
+#
+# sample_func = lambda word: word.lower()
+
+change_words(l, lambda word: word.capitalize())
+change_words(l, lambda word: word.lower())
+
+# function を引数とするものは 定義せずに そのまま書くと　簡潔
