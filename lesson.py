@@ -1,7 +1,19 @@
-from termcolor import colored
+# import collections, sys, os
+import collections
+import os
+import sys
+# アルファベット順
 
-print('test')
+# サードパーティー
+import termcolor
 
-print(colored('test', 'red'))
+import lesson_package
 
-print(colored('test', 'green'))
+import config
+
+print(collections.__file__)
+print(termcolor.__file__)
+print(lesson_package.__file__)
+print(config.__file__)
+
+print(sys.path)
