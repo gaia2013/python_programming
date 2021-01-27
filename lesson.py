@@ -1,27 +1,13 @@
-# import lesson_package.utils
-# from lesson_package import utils
-# from lesson_package.utils import say_twice
-# from lesson_package.talk import human
-# from lesson_package.talk import animal
-# from lesson_package.talk import *
+import builtins
 
-# print(animal.sing())
-# print(animal.cry())
+builtins.print()
 
-# r = lesson_package.utils.say_twice('hello')
-# r = utils.say_twice('hello')
-# r = say_twice('hello')
-# r = u.say_twice('hello')
+ranking = {
+    'A': 100,
+    'B': 85,
+    'C': 95
+}
 
-# print(r)
+ranking.get('A')
 
-# print(human.sing())
-# print(human.cry())
-
-# 新旧パッケージで利用可能にする際に使用
-try:
-    from lesson_package import utils
-except ImportError:
-    from lesson_package.tools import utils
-
-utils.say_twice('word')
+print(sorted(ranking, key=ranking.get, reverse=True))
