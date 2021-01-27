@@ -5,3 +5,7 @@ def sing():
 
 def cry():
     return utils.say_twice('FEAFDA$#$R')
+
+print(sing())
+
+print('animal:', __name__)
