@@ -1,5 +1,8 @@
-a = 'test'
-b = a
-c = b
+import lesson_package.talk.animal
 
-print(c)
+import config
+def main():
+    lesson_package.talk.anmial.sing()
+
+if __name__ == '__main__':
+    main()
